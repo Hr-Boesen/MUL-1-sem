@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+/*
+The main reason this is used is because sometimes the browser 
+will apply it's default margin/padding to elements, and in 
+a case where you do not want there to be any margin or 
+padding space around an element you will want to define 
+that there is no margin or padding.
+*/
+
+nav{
+    width: 800px; 
+    margin: auto; 
+}
+
+ul{
+    list-style: none; 
+}
+
+ul li{
+    width: 120px; 
+    background: #0080cd; 
+    float: left; 
+    height: 35px; 
+    line-height: 35px; 
+    text-align: center; 
+    margin-right: 2px;
+    position: relative;
+
+}
+
+ul li:hover{
+    background: #0c6ea8;
+}
+
+ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-family: sans-serif; 
+    display: block;
+}
+
+ul li ul li{
+    border-top: 1px solid #fff;
+}
+
+ul li ul{
+    display:none;
+}
+
+ul li:hover ul{
+    display:block;
+}
+
+ul li ul .item-2{
+    position: absolute; 
+    left: 122px; 
+    top: 0;
+    display:none;
+}
+
+ul li ul li:last-child:hover .item-2{
+    display:block;
+}
+
+
+
+p{
+    clear:both;
+}
+
+
+
+
