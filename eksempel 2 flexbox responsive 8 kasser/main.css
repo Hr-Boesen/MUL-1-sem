@@ -1,0 +1,26 @@
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: dodgerblue;
+}
+
+.flex-container div{
+    background-color: #f1f1f1f1; 
+    text-align:center; 
+    font-size: 2.4rem; 
+    line-height: 75px; 
+    width: 10.6%;
+    margin: 0.93%
+}
+
+@media only screen and (max-width: 800px){
+    .flex-container div{
+        width: 23.1%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .flex-container div{
+        width: 47.9%;
+    }
+}
