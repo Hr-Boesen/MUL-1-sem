@@ -1,0 +1,40 @@
+*{box-sizing:border-box;}
+
+.div-container{
+    display:flex; 
+    flex-wrap:wrap;
+}
+
+.left{
+    background-color: #2196f3;
+    padding: 20px; 
+    width: 20%;
+}
+
+.main{
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 60%;
+}
+
+.right{
+    background-color: #4caf50;
+    padding: 20px;
+    width:20%;
+}
+
+@media screen and (max-width: 1000px){
+    .left, .right {
+    width: 50%;
+    }
+    .main{
+    order:1;
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .left, .main, .right {
+    width: 100%;
+    }
+}
